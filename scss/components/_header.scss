@@ -1,0 +1,185 @@
+.hero-btn {
+    border-radius: 4px;
+    background: #2196f3;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .web {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    animation-name: header-anim;
+  }
+  
+  .web-footer-part:hover {
+    color: #2196f3;
+  }
+
+  .web-part {
+    color: #2196f3;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  
+  .web:hover {
+    color: #2196f3;
+  }
+  
+  .web-footer:hover {
+    color: #2196f3;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .addres-item {
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    animation-name: header-anim;
+  }
+  
+  .addres-text {
+    color: inherit;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .addres-text:hover {
+    color: #2196f3;
+  }
+  
+  .addres-svg {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: #757575;
+  }
+  
+  .addres-use-svg {
+    animation-name: fill;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .addres-item:hover .addres-use-svg {
+    fill: #2196f3;
+  }
+  
+  .nav-item {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    animation-name: header-anim;
+  }
+  
+  @keyframes header-anim {
+    0% {
+      color: initial;
+    }
+    100% {
+      color: #2196f3;
+    }
+  }
+  .addres-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .nav-menu-link.current::after {
+    content: "";
+    position: relative;
+    display: block;
+    left: 0;
+    top: 28px;
+    bottom: -1px;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav-menu-link:hover {
+    width: 100%;
+    color: #2196f3;
+  }
+  
+  .nav-menu-link.current {
+    color: #2196f3;
+  }
+  
+  .nav-menu-link {
+    position: relative;
+    color: #2e2f42;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    gap: 40px;
+    font-size: 14px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav-item:hover .nav-menu-link {
+    color: #2196f3;
+  }
+  
+  .header-mail {
+    color: #757575;
+  }
+  
+  .header-telephone {
+    color: #757575;
+  }

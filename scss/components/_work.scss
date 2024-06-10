@@ -1,0 +1,47 @@
+.work-title {
+    margin-bottom: 50px;
+    color: #212121;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+  }
+  
+  .work-list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .work-list-item {
+    position: relative;
+  }
+  
+  
+  
+  .work-list-name {
+    display: block;
+    background-color: #2f303a;
+    opacity: 80%;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    position: relative;
+    top: 73px;
+  }
+  
+  .work-name-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 27px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+  }

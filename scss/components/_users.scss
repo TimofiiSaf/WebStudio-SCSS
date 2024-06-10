@@ -1,0 +1,78 @@
+.users {
+    padding: 94px 0 94px 0;
+  }
+  
+  .users-list-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #212121;
+      font-family: "Roboto", sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.08px;
+  }
+  
+  .users-box {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 95px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .users-list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .users-list-box {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: #afb1b8 1px solid;
+    border-radius: 4px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .users-list-box:hover .user-svg-use {
+    fill: #2196f3;
+  }
+  
+  .users-list-box:hover {
+    border-color: #2196f3;
+    border-radius: 4px;
+    
+  }
+  
+  .users-svg {
+    fill: #afb1b8;
+    animation-name: fill;
+    transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+  
+  .users-list-svg {
+    display: block;
+    margin: 0 auto;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+  
+  .users-list-svg:hover {
+    border: #2196f3;
+    
+  }
+  
+  .users-list-box:hover .users-svg {
+    fill: #2196f3;
+    
+  }
