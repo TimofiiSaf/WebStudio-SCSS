@@ -1,23 +1,18 @@
-.hero-btn {
-    border-radius: 4px;
-    background: #2196f3;
-    border: none;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  
+  .header { 
+  padding: 24px 0 25px;
   }
   
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .header-list {
+
+  .header .container{
     display: flex;
     justify-content: space-between;
+    
   }
   
-  .web {
+  .logo {
     color: #000;
     font-family: Raleway;
     font-size: 26px;

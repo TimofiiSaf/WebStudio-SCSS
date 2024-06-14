@@ -13,47 +13,7 @@
     display: flex;
   }
   
-  .footer-svg {
-    width: 20px;
-    height: 20px;
-    background-size: 44px;
-  }
   
-  .footer-background-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border: 2px solid none;
-    border-radius: 45px;
-    fill: #fff;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-right: 10px;
-  }
-  
-  .footer-background-div:hover {
-    background-color: #2196f3;
-    fill: #fff;
-    border: 2px solid none;
-    border-radius: 45px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-svg-title {
-    text-align: start;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 25px;
-    display: inline-block;
-  }
-  
-  .footer-media-form {
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 70px;
-  }
   
   .footer-media-text {
     font-weight: 500;

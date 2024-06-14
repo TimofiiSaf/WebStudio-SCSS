@@ -1,12 +1,13 @@
-@import "./base/reset";
+@import "./utils/vars";
 @import "./base/common";
-@import "./components/containers";
+@import "./base/reset";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/adventages";
 @import "./components/work";
 @import "./components/team";
 @import "./components/users";
-@import "./components/footer";
-@import "./components/portfolio/main";
-@import "./base/style_all";
+@import "./components/footer-contacts";
+@import "./components/footer-join";
+@import "./components/footer-subscribe";
+
