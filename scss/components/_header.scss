@@ -27,11 +27,9 @@
     animation-name: header-anim;
   }
   
-  .web-footer-part:hover {
-    color: #2196f3;
-  }
+ 
 
-  .web-part {
+  .header-spacer__logo {
     color: #2196f3;
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -42,25 +40,25 @@
     letter-spacing: 0.78px;
   }
   
-  .web:hover {
+  .logo:hover {
     color: #2196f3;
   }
   
-  .web-footer:hover {
-    color: #2196f3;
-  }
+  // .web-footer:hover {
+  //   color: #2196f3;
+  // }
   
   .navigation {
     display: flex;
     align-items: center;
   }
   
-  .nav-list {
+  .navigation__list {
     display: flex;
     gap: 50px;
   }
   
-  .addres-item {
+  .addres-list__item {
     color: #757575;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
@@ -71,7 +69,7 @@
     animation-name: header-anim;
   }
   
-  .addres-text {
+  .addres-list__link {
     color: inherit;
     text-decoration: none;
     transition-property: color;
@@ -79,28 +77,28 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .addres-text:hover {
+  .addres-list__link:hover {
     color: #2196f3;
   }
   
-  .addres-svg {
+  .addres-list__svg {
     margin-right: 10px;
     vertical-align: middle;
     fill: #757575;
   }
   
-  .addres-use-svg {
+  .addres-list__icon {
     animation-name: fill;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .addres-item:hover .addres-use-svg {
+  .addres-list__item:hover .addres-list__icon {
     fill: #2196f3;
   }
   
-  .nav-item {
+  .navigation__item {
     color: #212121;
     font-family: Roboto;
     font-size: 14px;
@@ -125,7 +123,7 @@
     align-items: center;
   }
   
-  .nav-menu-link.current::after {
+  .nav-list__link.nav-list__link--current::after {
     content: "";
     position: relative;
     display: block;
@@ -140,16 +138,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .nav-menu-link:hover {
+  .nav-list__link:hover {
     width: 100%;
     color: #2196f3;
   }
   
-  .nav-menu-link.current {
+  .nav-list__link.nav-list__link--current {
     color: #2196f3;
   }
   
-  .nav-menu-link {
+  .nav-list__link {
     position: relative;
     color: #2e2f42;
     font-family: Roboto;
@@ -167,14 +165,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .nav-item:hover .nav-menu-link {
+  .nav-list__item:hover .navigation__link {
     color: #2196f3;
   }
   
-  .header-mail {
-    color: #757575;
-  }
-  
-  .header-telephone {
-    color: #757575;
-  }
