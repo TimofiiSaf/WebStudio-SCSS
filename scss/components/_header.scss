@@ -2,15 +2,17 @@
   
   .header { 
   padding: 24px 0 25px;
+  display: flex;
+  justify-content: center;
   }
-  
-  
 
-  .header .container{
+
+  
+  .header .container {
     display: flex;
     justify-content: space-between;
-    
   }
+
   
   .logo {
     color: #000;
@@ -29,7 +31,7 @@
   
  
 
-  .header-spacer__logo {
+  .header-spacer__logo--studio {
     color: #2196f3;
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -53,7 +55,7 @@
     align-items: center;
   }
   
-  .navigation__list {
+  .nav-list {
     display: flex;
     gap: 50px;
   }
