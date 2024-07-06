@@ -29,7 +29,7 @@ ul {
   justify-content: center;
 }
 
-.header .container {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -340,6 +340,21 @@ ul {
   gap: 30px;
 }
 
+.team-list__item {
+  border-radius: 5px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.team-list__name {
+  word-wrap: break-word;
+  margin-top: 15px;
+}
+.team-list__description {
+  word-wrap: break-word;
+  color: #fff;
+}
+
 .team {
   display: flex;
   padding-top: 94px;
@@ -348,12 +363,7 @@ ul {
   background: #f5f4fa;
 }
 
-.team-list__user {
-  background: #fff;
-  padding-bottom: 30px;
-}
-
-.team-list__user:hover {
+.team-list__item:hover {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border: #000;
   border-radius: 0px 0px 4px 4px;
@@ -364,7 +374,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 44px;
-  height: 44px;hfhdhefhe
+  height: 44px;
   border: 2px solid none;
   border-radius: 45px;
   fill: #afb1b8;
@@ -374,13 +384,15 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .background-div:hover {
   background-color: #2196f3;
   fill: #fff;
   border: 2px solid none;
   border-radius: 45px;
+}
+
+.comunication-list {
+  display: flex;
 }
 
 .background-div-svg {
@@ -405,7 +417,7 @@ ul {
   padding: 94px 0 94px 0;
 }
 
-.users-list-title {
+.users-title {
   text-align: center;
   margin-bottom: 50px;
   color: #212121;
@@ -417,20 +429,12 @@ ul {
   letter-spacing: 1.08px;
 }
 
-.users-box {
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 95px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .users-list {
   display: flex;
   gap: 30px;
 }
 
-.users-list-box {
+.users-list__box {
   display: flex;
   align-items: center;
   width: 170px;
@@ -442,11 +446,11 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.users-list-box:hover .user-svg-use {
+.users-list__box:hover .user-svg-use {
   fill: #2196f3;
 }
 
-.users-list-box:hover {
+.users-list__box:hover {
   border-color: #2196f3;
   border-radius: 4px;
 }
@@ -459,7 +463,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.users-list-svg {
+.users-list__svg {
   display: block;
   margin: 0 auto;
   transition-property: border;
@@ -467,11 +471,11 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.users-list-svg:hover {
+.users-list__svg:hover {
   border: #2196f3;
 }
 
-.users-list-box:hover .users-svg {
+.users-list__box:hover .users-svg {
   fill: #2196f3;
 }
 
