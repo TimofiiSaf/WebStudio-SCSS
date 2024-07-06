@@ -1,0 +1,14 @@
+.footer-background__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 2px solid none;
+    border-radius: 45px;
+    fill: #afb1b8;
+    animation-name: svg-background;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

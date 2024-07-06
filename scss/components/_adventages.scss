@@ -1,9 +1,13 @@
-adventages-list {
+.adventages-list {
     display: flex;
     gap: 30px;
   }
+
+.adventages {
+  padding: 94px 0 94px;
+}
   
-  .adventages-list-item::before {
+  .adventages-list__item::before {
     content: "";
     display: inline-block;
     width: 270px;
@@ -13,15 +17,15 @@ adventages-list {
     background-position: center;
   }
   
-  .adventages-list-item:nth-child(1)::before {
+  .adventages-list__item:nth-child(1)::before {
     background-image: url("../images/antena.svg");
   }
   
-  .adventages-list-item:nth-child(2)::before {
+  .adventages-list__item:nth-child(2)::before {
     background-image: url("../images/astronaut.svg");
   }
   
-  .adventages-list-item:nth-child(3)::before {
+  .adventages-list__item:nth-child(3)::before {
     background-image: url("../images/clock.svg");
   }
   
@@ -29,7 +33,7 @@ adventages-list {
     background-image: url("../images/diagram.svg");
   }
   
-  .adventages-list-tittle {
+  .adventages-list__title {
     color: #212121;
     font-family: Roboto;
     font-size: 14px;
@@ -42,7 +46,7 @@ adventages-list {
     padding-bottom: 10px;
   }
   
-  .adventages-list-text {
+  .adventages-list__description {
     color: #757575;
     font-family: Roboto;
     font-size: 14px;

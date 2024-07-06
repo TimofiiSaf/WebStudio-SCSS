@@ -1,4 +1,4 @@
-.work-title {
+.work__title {
     margin-bottom: 50px;
     color: #212121;
     text-align: center;
@@ -15,13 +15,13 @@
     gap: 30px;
   }
   
-  .work-list-item {
+  .work-list__item {
     position: relative;
   }
   
   
   
-  .work-list-name {
+  .work-list__name {
     display: block;
     background-color: #2f303a;
     opacity: 80%;
@@ -32,7 +32,7 @@
     top: 73px;
   }
   
-  .work-name-text {
+  .work-name__text {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #fff;

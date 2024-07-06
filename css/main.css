@@ -74,6 +74,34 @@ ul {
   gap: 50px;
 }
 
+.nav-list__item {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  animation-name: header-anim;
+}
+.nav-list__link {
+  position: relative;
+  color: #2e2f42;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: block;
+  gap: 40px;
+  font-size: 14px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .addres-list__item {
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -92,6 +120,17 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.addres-list__svg {
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: #757575;
+}
+.addres-list__icon {
+  animation-name: fill;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .addres-list__link:hover {
   color: #2196f3;
@@ -103,26 +142,8 @@ ul {
   fill: #757575;
 }
 
-.addres-list__icon {
-  animation-name: fill;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .addres-list__item:hover .addres-list__icon {
   fill: #2196f3;
-}
-
-.navigation__item {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  animation-name: header-anim;
 }
 
 @keyframes header-anim {
@@ -163,24 +184,6 @@ ul {
   color: #2196f3;
 }
 
-.nav-list__link {
-  position: relative;
-  color: #2e2f42;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  display: block;
-  gap: 40px;
-  font-size: 14px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .nav-list__item:hover .navigation__link {
   color: #2196f3;
 }
@@ -195,14 +198,14 @@ ul {
   background-position: center;
 }
 
-.hero-btn {
+.hero__button {
   border-radius: 4px;
   background: #2196f3;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.hero-btn {
+.hero__button {
   color: #fff;
   text-align: center;
   font-family: Roboto;
@@ -215,7 +218,7 @@ ul {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   height: 120px;
   color: #fff;
@@ -228,12 +231,16 @@ ul {
   margin: auto;
 }
 
-adventages-list {
+.adventages-list {
   display: flex;
   gap: 30px;
 }
 
-.adventages-list-item::before {
+.adventages {
+  padding: 94px 0 94px;
+}
+
+.adventages-list__item::before {
   content: "";
   display: inline-block;
   width: 270px;
@@ -243,15 +250,15 @@ adventages-list {
   background-position: center;
 }
 
-.adventages-list-item:nth-child(1)::before {
+.adventages-list__item:nth-child(1)::before {
   background-image: url("../images/antena.svg");
 }
 
-.adventages-list-item:nth-child(2)::before {
+.adventages-list__item:nth-child(2)::before {
   background-image: url("../images/astronaut.svg");
 }
 
-.adventages-list-item:nth-child(3)::before {
+.adventages-list__item:nth-child(3)::before {
   background-image: url("../images/clock.svg");
 }
 
@@ -259,7 +266,7 @@ adventages-list {
   background-image: url("../images/diagram.svg");
 }
 
-.adventages-list-tittle {
+.adventages-list__title {
   color: #212121;
   font-family: Roboto;
   font-size: 14px;
@@ -272,7 +279,7 @@ adventages-list {
   padding-bottom: 10px;
 }
 
-.adventages-list-text {
+.adventages-list__description {
   color: #757575;
   font-family: Roboto;
   font-size: 14px;
@@ -282,7 +289,7 @@ adventages-list {
   letter-spacing: 0.42px;
 }
 
-.work-title {
+.work__title {
   margin-bottom: 50px;
   color: #212121;
   text-align: center;
@@ -299,11 +306,11 @@ adventages-list {
   gap: 30px;
 }
 
-.work-list-item {
+.work-list__item {
   position: relative;
 }
 
-.work-list-name {
+.work-list__name {
   display: block;
   background-color: #2f303a;
   opacity: 80%;
@@ -314,7 +321,7 @@ adventages-list {
   top: 73px;
 }
 
-.work-name-text {
+.work-name__text {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #fff;
@@ -341,20 +348,23 @@ adventages-list {
   background: #f5f4fa;
 }
 
-.team-user {
-  border: #000;
-  border-radius: 0px 0px 4px 4px;
+.team-list__user {
   background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   padding-bottom: 30px;
 }
 
-.background-div {
+.team-list__user:hover {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border: #000;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.comunication-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
-  height: 44px;
+  height: 44px;hfhdhefhe
   border: 2px solid none;
   border-radius: 45px;
   fill: #afb1b8;
@@ -363,6 +373,8 @@ adventages-list {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .background-div:hover {
   background-color: #2196f3;
@@ -385,6 +397,10 @@ adventages-list {
     background-color: #2196f3;
   }
 }
+.team__title {
+  color: #000;
+}
+
 .users {
   padding: 94px 0 94px 0;
 }
@@ -543,6 +559,21 @@ adventages-list {
 
 .web-footer-part:hover {
   color: #2196f3;
+}
+
+.footer-background__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid none;
+  border-radius: 45px;
+  fill: #afb1b8;
+  animation-name: svg-background;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
