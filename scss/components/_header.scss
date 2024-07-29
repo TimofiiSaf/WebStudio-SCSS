@@ -6,19 +6,13 @@
   justify-content: center;
   }
 
-  .header {
-    &__spacer {
-      
-    }
-    &__container{
-      display: flex;
-    justify-content: space-between;
-    }
-  }
 
 
   
- 
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+  }
 
   
   .logo {
@@ -29,11 +23,15 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-    margin-right: 93px;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     animation-name: header-anim;
+  }
+
+  .header-spacer {
+    display: flex;
+    gap: 93px;
   }
   
  

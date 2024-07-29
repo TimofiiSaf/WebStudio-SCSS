@@ -29,7 +29,7 @@ ul {
   justify-content: center;
 }
 
-.header__container {
+.header .container {
   display: flex;
   justify-content: space-between;
 }
@@ -42,11 +42,15 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin-right: 93px;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   animation-name: header-anim;
+}
+
+.header-spacer {
+  display: flex;
+  gap: 93px;
 }
 
 .header-spacer__logo--studio {
@@ -393,6 +397,7 @@ ul {
 
 .comunication-list {
   display: flex;
+  margin: 0 auto;
 }
 
 .background-div-svg {
@@ -565,17 +570,35 @@ ul {
   color: #2196f3;
 }
 
-.footer-background__svg {
+.footer-social-svg__title {
+  text-align: start;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.footer-social-svg {
+  margin-top: 70px;
+  margin-right: 93px;
+}
+
+.footer-background__use {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border: 2px solid none;
   border-radius: 45px;
-  fill: #afb1b8;
-  animation-name: svg-background;
-  transition-property: background-color;
+  fill: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.footer-background__use:hover {
+  background-color: #2196f3;
+  fill: #fff;
+  border: 2px solid none;
+  border-radius: 45px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
