@@ -13,15 +13,12 @@
   }
 
   .footer-social-svg {
-    margin-top: 70px;
-    margin-right: 93px;
+    margin-right: 90px;
   }
 
 
+
 .footer-background__use {
-    display: flex;
-    justify-content: center;
-    // align-items: center;
     width: 44px;
     height: 44px;
     border: 2px solid none;
@@ -40,3 +37,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .footer-background__svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

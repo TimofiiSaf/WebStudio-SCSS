@@ -549,11 +549,6 @@ ul {
   margin-right: 70px;
 }
 
-.footer-social-svg {
-  margin-top: 70px;
-  margin-right: 93px;
-}
-
 .mail-footer,
 .tel-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -570,6 +565,19 @@ ul {
   color: #2196f3;
 }
 
+.addres__text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  font-style: normal;
+  word-wrap: break-word;
+}
+
 .footer-social-svg__title {
   text-align: start;
   color: #fff;
@@ -578,13 +586,10 @@ ul {
   display: inline-block;
 }
 .footer-social-svg {
-  margin-top: 70px;
-  margin-right: 93px;
+  margin-right: 90px;
 }
 
 .footer-background__use {
-  display: flex;
-  justify-content: center;
   width: 44px;
   height: 44px;
   border: 2px solid none;
@@ -601,6 +606,12 @@ ul {
   border-radius: 45px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-background__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .backdrop {
@@ -841,8 +852,8 @@ ul {
 }
 
 .footer-form__input {
-  width: 264px;
-  height: 40px;
+  width: 358px;
+  height: 50px;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -852,7 +863,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  color: #ffffff;
+  color: inherit;
 }
 
 .footer-form-input::-moz-placeholder {
