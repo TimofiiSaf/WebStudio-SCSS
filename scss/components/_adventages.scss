@@ -6,6 +6,30 @@
 .adventages {
   padding: 94px 0 94px;
 }
+
+.adventages-list {
+  &__title {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  &__description {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+  }
+}
   
   .adventages-list__item::before {
     content: "";
@@ -30,28 +54,28 @@
   }
   
   .adventages-list-item:nth-child(4)::before {
-    background-image: url("../images/diagram.svg");
+    background-image: url(/images/diagram.svg);
   }
   
-  .adventages-list__title {
-    color: #212121;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
+  // .adventages-list__title {
+  //   color: #212121;
+  //   font-family: Roboto;
+  //   font-size: 14px;
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   line-height: normal;
+  //   letter-spacing: 0.42px;
+  //   text-transform: uppercase;
+  //   padding-top: 30px;
+  //   padding-bottom: 10px;
+  // }
   
-  .adventages-list__description {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
-  }
+  // .adventages-list__description {
+  //   color: #757575;
+  //   font-family: Roboto;
+  //   font-size: 14px;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   line-height: 24px; /* 171.429% */
+  //   letter-spacing: 0.42px;
+  // }

@@ -14,15 +14,13 @@
     display: flex;
     gap: 30px;
   }
-  
-  .work-list__item {
-    position: relative;
-  }
-  
-  
-  
-  .work-list__name {
-    display: block;
+
+  .work-list {
+    &__item {
+      position: relative;
+    }
+    &__name {
+      display: block;
     background-color: #2f303a;
     opacity: 80%;
     width: 370px;
@@ -30,7 +28,25 @@
     padding-top: 27px;
     position: relative;
     top: 73px;
+    }
   }
+  
+  // .work-list__item {
+  //   position: relative;
+  // }
+  
+  
+  
+  // .work-list__name {
+  //   display: block;
+  //   background-color: #2f303a;
+  //   opacity: 80%;
+  //   width: 370px;
+  //   height: 70px;
+  //   padding-top: 27px;
+  //   position: relative;
+  //   top: 73px;
+  // }
   
   .work-name__text {
     font-family: "Roboto", sans-serif;

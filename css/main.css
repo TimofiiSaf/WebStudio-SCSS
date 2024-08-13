@@ -221,7 +221,6 @@ ul {
   display: block;
   margin: 0 auto;
 }
-
 .hero__title {
   width: 696px;
   height: 120px;
@@ -242,6 +241,28 @@ ul {
 
 .adventages {
   padding: 94px 0 94px;
+}
+
+.adventages-list__title {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.adventages-list__description {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
 }
 
 .adventages-list__item::before {
@@ -267,30 +288,7 @@ ul {
 }
 
 .adventages-list-item:nth-child(4)::before {
-  background-image: url("../images/diagram.svg");
-}
-
-.adventages-list__title {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.adventages-list__description {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.42px;
+  background-image: url(/images/diagram.svg);
 }
 
 .work__title {
@@ -313,7 +311,6 @@ ul {
 .work-list__item {
   position: relative;
 }
-
 .work-list__name {
   display: block;
   background-color: #2f303a;
@@ -388,15 +385,18 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.background-div:hover {
+.comunication-list__link:hover {
   background-color: #2196f3;
   fill: #fff;
   border: 2px solid none;
   border-radius: 45px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comunication-list {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -415,7 +415,40 @@ ul {
   }
 }
 .team__title {
-  color: #000;
+  color: #212121;
+  font-size: 36px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.team-list__name {
+  color: #212121;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.team-list__description {
+  color: #757575;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .users {
@@ -450,6 +483,13 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.users-list__svg {
+  display: block;
+  margin: 0 auto;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .users-list__box:hover .user-svg-use {
   fill: #2196f3;
@@ -464,14 +504,6 @@ ul {
   fill: #afb1b8;
   animation-name: fill;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.users-list__svg {
-  display: block;
-  margin: 0 auto;
-  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -503,28 +535,15 @@ ul {
   color: #2196f3;
 }
 
-.web-footer-part {
+.footer-spacer__logo--studio {
   color: #2196f3;
-  text-decoration: none;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-style: normal;
+  text-decoration: none;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  text-decoration: none;
-}
-
-.web-footer {
-  color: #fff;
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-  padding-top: 60px;
-  text-decoration: none;
 }
 
 .addres {
@@ -533,6 +552,7 @@ ul {
 
 .mail-footer {
   padding-top: 5px;
+  margin-top: 20px;
 }
 
 .tel-footer {
@@ -585,6 +605,18 @@ ul {
   margin-bottom: 25px;
   display: inline-block;
 }
+.footer-svg__title {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .footer-social-svg {
   margin-right: 90px;
 }

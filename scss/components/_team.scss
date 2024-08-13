@@ -56,16 +56,19 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .background-div:hover {
+  .comunication-list__link:hover {
     background-color: #2196f3;
     fill: #fff;
     border: 2px solid none;
     border-radius: 45px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
   }
 
   .comunication-list {
     display: flex;
+    justify-content: center;
     margin: 0 auto;
   }
 
@@ -86,6 +89,40 @@
   }
   
   .team__title {
-    color: #000;
     
+      color: #212121;
+      font-size: 36px;
+      font-style: normal;
+      font-family: "Roboto",sans-serif;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1px;
+      text-transform: none;
+      margin-bottom: 50px;
+    
+  }
+
+  .team-list__name {
+    color: #212121;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Roboto",sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  }
+
+  .team-list__description {
+    color: #757575;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+  letter-spacing: 0;
+  text-transform: none;
   }

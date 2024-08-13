@@ -23,29 +23,20 @@
     color: #2196f3;
   }
 
-  .web-footer-part {
+ 
+  .footer-spacer__logo--studio {
     color: #2196f3;
-    text-decoration: none;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-style: normal;
+    text-decoration: none;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-    text-decoration: none;
+    
   }
   
-  .web-footer {
-    color: #fff;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-    padding-top: 60px;
-    text-decoration: none;
-  }
+
   
   .addres {
     padding-top: 10px;
@@ -53,6 +44,7 @@
   
   .mail-footer {
     padding-top: 5px;
+    margin-top:  20px;
   }
   
   .tel-footer {
