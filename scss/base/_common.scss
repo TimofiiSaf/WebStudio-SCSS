@@ -4,7 +4,12 @@ body {
     font-weight: 400;
   }
   .container {
+    // min-width: 320px;
     width: 1200px;
+    // max-width: 767;
     padding: 0 15px;
     margin: 0 auto;
-  }
+    // @media (min-width: 768px) {
+    //   max-width: 320px;
+      
+    }
